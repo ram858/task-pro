@@ -15,7 +15,7 @@ spec:
         app: java-app
     spec:
       containers:
-      - image: registry.gitlab.com/adaxassessment/taskpro/app:latest 
+      - image: registry.gitlab.com/taskpro/app:latest 
         name: java-app
         ports:
         - containerPort: 80
