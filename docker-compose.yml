@@ -1,0 +1,15 @@
+version: '3'
+services:
+  javaapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image:  registry.gitlab.com/adaxassessment/taskpro/app:latest     
+    ports:
+      - 5001:80
+    volumes:
+      - ./app:/app
+    networks:
+      - taskpro-javaapp
+networks:
+  taskpro-javaapp:
