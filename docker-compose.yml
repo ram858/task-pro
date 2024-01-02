@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image:  registry.gitlab.com/adaxassessment/taskpro/app:latest     
+    image:  registry.gitlab.com/taskpro/app:latest     
     ports:
       - 5001:80
     volumes:
